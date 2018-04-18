@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@color/blanco">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/negro"
+            android:layout_centerInParent="true"
+            android:text="@string/testchallenge"
+            android:textSize="22sp"
+            android:id="@+id/textsplash"/>
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/code"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/mfondo"
+            android:contentDescription="@string/app_name" />
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/mBarcircle"
+            android:max="48"
+            android:progress="1"
+            android:progressDrawable="@drawable/circular_scr"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/textsplash"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
